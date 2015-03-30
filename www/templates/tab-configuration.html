@@ -1,0 +1,57 @@
+<ion-view view-title="Configuration">
+    <ion-content padding="true">
+
+    <div class="card">
+        <div class="item item-divider">
+            Libellé du site :
+        </div>
+        <div class="item item-input-inset">
+            <label class="item-input-wrapper">
+                <input type="text" placeholder="Ma maison à Bordeaux" ng-model="client.libelleSite">
+            </label>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="item item-divider">
+            Adresse E-mail d'alerte :
+        </div>
+        <div class="item item-input-inset">
+            <label class="item-input-wrapper">
+                <input type="text" placeholder="toto@test.com" ng-model="client.alerteEmail">
+            </label>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="item item-divider">
+            Téléphones d'alerte :
+        </div>
+        <div class="item item-input-inset">
+            <label class="item-input-wrapper">
+                <input type="text" placeholder="0231234567" ng-model="client.alerteTphListe[0]">
+            </label>
+        </div>
+        <div class="item item-input-inset">
+            <label class="item-input-wrapper">
+                <input type="text" placeholder="0231234567" ng-model="client.alerteTphListe[1]">
+            </label>
+        </div>
+        <div class="item item-input-inset">
+            <label class="item-input-wrapper">
+                <input type="text" placeholder="0231234567" ng-model="client.alerteTphListe[2]">
+            </label>
+        </div>
+        <div class="item item-input-inset">
+            <label class="item-input-wrapper">
+                <input type="text" placeholder="0231234567" ng-model="client.alerteTphListe[3]">
+            </label>
+        </div>
+    </div>
+
+    <button class="button button-block button-dark" ng-click="ModifierClient()">
+        Modifier
+    </button>
+
+    </ion-content>
+</ion-view>

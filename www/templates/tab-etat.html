@@ -1,0 +1,43 @@
+<ion-view view-title="Etat de l'alarme">
+  <ion-content class="padding">
+  <!--
+    <div class="list card">
+      <div class="item item-divider">Recent Updates</div>
+      <div class="item item-body">
+        <div>
+          There is a fire in <b>sector 3</b>
+        </div>
+      </div>
+    </div>
+    <div class="list card">
+      <div class="item item-divider">Health</div>
+      <div class="item item-body">
+        <div>
+          You ate an apple today!
+        </div>
+      </div>
+    </div>
+    <div class="list card">
+      <div class="item item-divider">Upcoming</div>
+      <div class="item item-body">
+        <div>
+          You have <b>29</b> meetings on your calendar tomorrow.
+        </div>
+      </div>
+    </div>
+  -->
+  <div class="button-bar">
+      <a class="button button-dark" ng-click="showPopupCode(1)"><img src="img/btn-alarme-totale.png" class="pct50 margeH" /><br/>TOTALE</a>
+      <a class="button button-dark" ng-click="showPopupCode(2)"><img src="img/btn-alarme-partielle.png" class="pct50 margeH" /><br/>PARTIELLE</a>
+      <a class="button button-dark" ng-click="showPopupCode(0)"><img src="img/btn-alarme-arret.png" class="pct50 margeH" /><br/>ARRET</a>
+  </div>
+
+  <div class="card">
+    <div class="item item-text-wrap center">
+      Etat actuel de l'alarme : <br/>
+      <a class="button"><img src="img/{{etatImg}}.png" class="margeH"/><br/>{{etatTxt}}</a>
+    </div>
+  </div>
+
+  </ion-content>
+</ion-view>

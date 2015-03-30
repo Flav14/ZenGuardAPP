@@ -1,0 +1,51 @@
+<ion-view view-title="Images">
+  <ion-content>
+  <div class="list">
+    <div class="item item-divider">
+      Images
+      <span class="item-note"><button class="button button-dark ion-load-c iconButton" ng-click="reload()"></button>
+      </span>
+    </div>
+    <a class="item" ng-repeat="image in images" ng-click="visuImage('{{image.link}}','{{image.date}}')">
+       {{image.date}}
+       <span class="item-note">
+        {{image.link}}
+      </span>
+    </a>
+
+  <script id="image-visu.html" type="text/ng-template">
+  <ion-modal-view>
+      <ion-header-bar class="bar bar-header bar-dark">
+          <h1 class="title">Visualisation</h1>
+          <button class="button button-clear button-primary" ng-click="closeModal()">Fermer</button>
+      </ion-header-bar>
+       <ion-content class="padding">
+
+          <div class="list">
+            <div class="item item-divider">
+             {{imgDate}}
+            </div>
+
+            <div class="item" ng-repeat="imgB64 in imgPicsB64">
+              <img ng-src='data:image/jpeg;base64,{{imgB64}}' />
+            </div>
+          </div>
+        </ion-content>
+    </ion-modal-view>
+  </script>
+    <!--
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap">
+        <img ng-src="{{chat.face}}">
+        <h2>{{chat.name}}</h2>
+        <p>{{chat.lastText}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+    -->
+  </ion-content>
+</ion-view>

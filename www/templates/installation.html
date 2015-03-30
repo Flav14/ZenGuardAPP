@@ -1,0 +1,30 @@
+<ion-view view-title="Premier lancement">
+  <ion-content class="padding">
+
+  <div class="card">
+    <div class="item item-text-wrap">
+      Premier lancement, enregistrement sur Zenguard nécessaire.
+    </div>
+  </div>
+
+  <form ng-submit="verifierInfos(info)">
+    <div class="list list-inset">
+
+      <h5>Numéro d'abonné :</h5>
+      <label class="item item-input">
+        <input type="text" placeholder="1000000" ng-model="info.clientID"/>
+      </label>
+      <h5>Mot de passe :</h5>
+      <label class="item item-input">
+        <input type="password" placeholder="mot de passe application" ng-model="info.mdp"/>
+      </label>
+    </div>
+
+  <div class=" center margeH" >
+    <button type="submit" class="button button-dark" >
+      Envoyer
+    </button>
+  </div>
+  </form>
+  </ion-content>
+</ion-view>

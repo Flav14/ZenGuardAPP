@@ -1,0 +1,30 @@
+/* Empty. Add your own CSS if you like */
+.margeB{
+    margin-bottom:20px;
+}
+.margeH{
+    margin-top:20px;
+}
+
+.pct50{
+    height: 60%;
+    width: 60%;
+}
+
+.center{
+    text-align: center;
+}
+
+.iconChargementEtat svg{
+    width: 40px;
+    height: 40px;
+    stroke: #FFF;
+    fill: #444;
+
+}
+
+.iconButton {
+    min-width: 25px;
+    min-height: 25px;
+    line-height: 25px;
+}
